@@ -14,8 +14,10 @@ export class AppComponent {
   //           autore: 'Mario Rossi 2',
   //           testo: 'Creare componenti con Angular 2 è molto semplice.'};
 
-            ngOnInit() {
-              console.log(this.myArticolo);
+  ngOnInit() {
+    console.log(this.myArticolo);
   }
-            
+mostraMessaggioRingraziamento(numApprezzamenti) {
+    alert('Grazie per aver espresso il tuo apprezzamento per l\'articolo! \n Il numero di apprezzamenti raggiunti è ' + numApprezzamenti);
+}
 }
