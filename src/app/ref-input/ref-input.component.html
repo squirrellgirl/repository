@@ -1,0 +1,25 @@
+Inserisci un numero: 
+<input type="number" #numero (keyup)="0" /> 
+<div>
+    Il doppio di {{numero.value}} &egrave; {{numero.value * 2}}
+</div> 
+
+Inserisci un numero:
+<input type="number" [(ngModel)]="numero2" /> 
+<div>
+    Il doppio di {{numero2}} &egrave; {{numero2 * 2}}
+</div>
+
+<input type="number"
+       [ngModel]="numero3" 
+       (ngModelChange)="numero3 = $event" />
+<div>
+    Il doppio di {{numero3}} &egrave; {{numero3 * 2}}
+</div>
+
+<input type="number"
+       [value]="numero4"
+       (input)="numero4 = $event.target.value" />
+<div>
+    Il doppio di {{numero4}} &egrave; {{numero4 * 2}}
+</div>

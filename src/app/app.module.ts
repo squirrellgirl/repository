@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ArticoloComponent } from './articolo/articolo.component';
+import { RefInputComponent } from './ref-input/ref-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticoloComponent
+    ArticoloComponent,
+    RefInputComponent
   ],
   imports: [
     BrowserModule,
